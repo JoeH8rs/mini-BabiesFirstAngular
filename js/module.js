@@ -1,1 +1,4 @@
-var module = angular.module('moduleName', []);
+angular.module('friendsList', []);
+
+
+

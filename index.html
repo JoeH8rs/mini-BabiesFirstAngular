@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-ng-module="moduleName" lang="en">
+<html ng-app="friendsList">
 <head>
 	<meta charset="UTF-8">
 	<title>Joe's Website</title>
@@ -7,12 +7,13 @@
     <link rel="stylesheet" href="css/main.css">
 	
 </head>
-<body ng-controller="mainControl">
+<body ng-controller="mainControl" ng-cloak>
 	<h1>Joe's Website</h1>
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.15/angular.min.js"></script>
-	<script src="js/main.js"></script>
+	
+<p ng-cloak> My name is: {{name}} </p>
+<p>{{friends}}</p>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.js"></script>
 	<script src="js/module.js"></script>
+	<script src="js/mainControl.js"></script>
 </body>
 </html>
